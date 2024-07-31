@@ -1,75 +1,79 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1em;
+header nav ul li {
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:hover, nav ul li a.active {
+header nav ul li a.active {
     text-decoration: underline;
 }
 
-main {
-    padding: 2em;
-    background-color: white;
-}
-
-section.banner {
+.banner {
+    position: relative;
+    background: url('images/iron_sculpture.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     text-align: center;
 }
 
-section.banner img {
-    max-width: 100%;
-    height: auto;
+.banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
-section.overview, section.news, section.contact, section.history, section.government, section.regions, section.embassies, section.articles {
-    margin: 2em 0;
+.overview, .news {
+    padding: 20px;
+}
+
+.overview h2, .news h2 {
+    text-align: center;
+}
+
+.overview p, .news p {
+    text-align: justify;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
+    padding: 10px 0;
+    position: relative;
     bottom: 0;
     width: 100%;
-}
-
-button, .button {
-    background-color: #333;
-    color: white;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover, .button:hover {
-    background-color: #555;
 }
