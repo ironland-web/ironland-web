@@ -1,0 +1,75 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+    background-color: white;
+}
+
+section.banner {
+    text-align: center;
+}
+
+section.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+section.overview, section.news, section.contact, section.history, section.government, section.regions, section.embassies, section.articles {
+    margin: 2em 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button, .button {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    background-color: #555;
+}
